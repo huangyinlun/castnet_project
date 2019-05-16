@@ -1,178 +1,162 @@
-<style>
-        /* *{
-            border-style: solid;
-            border-width: 1px;
-        } */
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin-top: 20em;
+  display: block;
+}
+.pj_info {
+  display: inline;
+}
+.project {
+  background-color: antiquewhite;
+  height: auto;
+  display: block;
+  padding: 1em;
+  width: 95%;
+  margin: 0 auto;
+}
+.project .pj_info .pj_title {
+  display: inline;
+  font-size: 1.1em;
+  padding-left: 0.6em;
+  padding-right: 0.5em;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-color: #3aab97;
+  margin: 0 0.5em;
+}
+.project .pj_info .pj_author .pj_reporter {
+  display: inline;
+  font-size: 1em;
+}
+.pj_author {
+  display: inline;
+  font-size: 1.1em;
+}
+.pj_abstract {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 1em auto;
+  padding: 1em;
+  font-size: 1.1em;
+}
 
-	section{
-            margin-top: 20em;
-        }
-        p{
-            color:#5b5751;
-            font-size:1.3em;
-            display:inline;
-        }
-        .pj_p_t{
-            padding-left:0.5em;
-            padding-right: 0.5em;
-            border-left-style: solid;
-            border-right-style:solid;
-            border-left-width: 2px;
-            border-right-width: 2px;
-            border-color: #3aab97;
-            margin:0 0.5em;
-        }
+.swiper-button-prev,
+.swiper-button-next {
+  background-image: none;
+}
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  border: none;
+  outline: none;
+}
+.swiper-button-prev > i,
+.swiper-button-next > i {
+  font-size: 4em;
+  color: #5b5751;
+}
 
-        section div a{
-            color:#5b5751;
-            font-size:1.3em;
-            display:inline;
-        }
+.pj_article {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+}
+.pj_article .pj_thumbnail img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 1em auto;
+}
 
-        .pj_div_p{
-            background-color: #FFFFFF;
-            width: 80em;
-            margin:1.2em;
-            padding:1em;
-        }
-        .pj_div_b{
-            background-color:rgba(222,198,166,0.6);
-            width: 88em;
-            margin:20em 0em;
-            padding:1em;
-	    height:22em;
-        }
+a {
+  color: #5b5751;
+  margin: 1em;
+}
+.pj_article_title {
+  margin: 1em 0em;
+}
 
-        .pj_photo1{
-            height:8em;
-            width:12em;
-            display:block;
-	    max-width: 100%;
-        }
-       
-        .pj_article{
-            display:inline-block;
-            margin:0.3em;
-            margin-left: 3.2em;
-            margin-right: 1.5em;
-        }
-        .pj_article_title{
-           font-size: 1.2em;  
-	   margin:-1em;
-	   margin-top:1em;
-	   }
+footer {
+  margin-top: 100em;
+}
 
-	.pj_p_t2{
-            padding-left:0.5em;
-            padding-right: 0.5em;
-            border-left-style: solid;
-            border-right-style:solid;
-            border-left-width: 2px;
-            border-right-width: 2px;
-            border-color: #3aab97;
-            margin:0 0.5em;
-        }
+@media screen and (max-width: 575px) {
+  html,
+  body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  section {
+    display: block;
+    margin-top: -2em;
+  }
+  .project {
+    background-color: antiquewhite;
+    height: auto;
+    display: block;
+    padding: 1em;
+  }
+  .pj_info {
+    font-size: 1.4em;
+  }
+  .project .pj_info .pj_title {
+    display: inline;
+    font-size: 0.8em;
+    padding-left: 0.6em;
+    padding-right: 0.5em;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: #3aab97;
+    margin: 0 0.5em;
+  }
+  .project .pj_info .pj_author {
+    display: inline;
+    font-size: 0.5em;
+  }
+  .project .pj_info .pj_author .pj_reporter {
+    font-size: 1.1em;
+  }
 
-	.pj_div_c{
-            background-color:rgba(222,198,166,0.6);
-            width: 88em;
-            margin:3em;
-	    margin-right:-1em;
-	    margin-left:-1em;
-            padding:1em;
-	    height:22em;
-	}
+  .pj_abstract {
+    margin: 0.5em auto;
+    width: 80%;
+    padding: 1em;
+    font-size: 1.1em;
+  }
 
-	
-	
- @media screen and (max-width: 576px) {
-	
+  .pj_abstract .p {
+    background-color: #ffffff;
+    margin: 2em;
+  }
+  .pj_article .pj_thumbnail img {
+    width: 85%;
+  }
 
-  	section{
-            margin-top: 5em;
-        }
+  .pj_article_title {
+    margin: 1em 2em;
+    text-align: center;
+  }
 
-	p{
-            color:#5b5751;
-            font-size:1.2em;
-            display:inline;
-        }
-        .pj_p_t{
-            padding-left:0.5em;
-            padding-right: 0.5em;
-            border-left-style: solid;
-            border-right-style:solid;
-            border-left-width: 2px;
-            border-right-width: 2px;
-            border-color: #3aab97;
-            margin:0 0.5em;
-        }
-	
-	.pj_title{
-	font-size:1.2em;
-	}
+  a {
+    color: #5b5751;
+  }
 
-        section div a{
-            color:#5b5751;
-            font-size:1.3em;
-            display:inline;
-        }
-        .pj_div_p{
-            background-color: #FFFFFF;
-            width: 25em;
-            margin:1em;
-            padding:1em;
-        }
-        .pj_div_b{
-            background-color:rgba(222,198,166,0.6);
-            width: 30em;
-            margin:20em 0em;
-            padding:1em;
-	    height:88em;
-        }
+  .pj_thumbnail img {
+    display: block;
+    margin: 0 auto;
+  }
+  .pj_project_word {
+    font-size: 0.8em;
+  }
 
-        .pj_photo1{
-            height:12em;
-            width:18em;
-            display:block;
-	    max-width: 100%;
-        }
-       
-        .pj_article{
-            display:block;
-            margin-top:1em;
-            margin-left: 1.5em;
-        }
-
-        .pj_article_title{
-           font-size: 1em; 
-	   margin:5em; 
-        }
-
-	.pj_p_t2{
-            padding-left:0.5em;
-            padding-right: 0.5em;
-            border-left-style: solid;
-            border-right-style:solid;
-            border-left-width: 2px;
-            border-right-width: 2px;
-            border-color: #3aab97;
-            margin:100 0.5em;
-        }
-
-	.pj_div_c{
-            background-color:rgba(222,198,166,0.6);
-            width: 90em;
-            margin:5em;
-	    margin-right:-1em;
-	    margin-left:-1em;
-            padding:1em;
-	    height:88em;
-	}
-	
-	footer{
-	    margin-top:90em;
-	}
-
-
-</style>
+  footer {
+    margin-top: 50em;
+  }
+}
